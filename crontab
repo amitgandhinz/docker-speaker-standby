@@ -1,0 +1,2 @@
+*/10 * * * * aplay ~/docker-speaker_standby/10.wav
+
