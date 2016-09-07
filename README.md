@@ -17,3 +17,10 @@ $ crontab -e
 ```
 
 
+# Docker
+
+```
+$ docker build -t speaker_standby .
+$ docker run -d --net host --device /dev/snd --name speaker_standby --restart=always speaker_standby
+```
+
