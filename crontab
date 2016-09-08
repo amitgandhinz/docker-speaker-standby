@@ -1,2 +1,1 @@
-*/5 * * * * aplay /docker-speaker-standby/10.wav
-
+*/1 * * * * aplay /docker-speaker-standby/10.wav >> /var/log/speaker_standby.log 2>&1
