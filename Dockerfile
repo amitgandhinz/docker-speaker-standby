@@ -7,11 +7,12 @@ RUN apt-get install git python python-dev python-distribute python-pip
 RUN apt-get install python-numpy python-pyaudio alsa-utils
 RUN apt-get install cron nano
 
-RUN git clone https://github.com/amitgandhinz/docker-speaker-standby.git #clone repo
+RUN git clone https://github.com/amitgandhinz/docker-speaker-standby.git # clone repo
 
 RUN cd docker-speaker-standby
+ADD play_tone.sh /docker-speaker-standby/play_tone.sh
 
-CMD ["./playtone.sh"]
+CMD ["/docker-speaker-standby/play_tone.sh"]
 
 
 

@@ -1,4 +1,4 @@
  while :;do 
-    aplay 10.wav
+    aplay /docker-speaker-standby/10.wav
     sleep 300
  done
